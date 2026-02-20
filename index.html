@@ -894,7 +894,7 @@
                 <li><a href="#standorte">Standorte</a></li>
             </ul>
             
-            <a href="#kontakt" class="cta-button">Jetzt Anfragen</a>
+            <a href="anfrage.html" class="cta-button">Jetzt Anfragen</a>
         </nav>
     </header>
 
@@ -908,7 +908,7 @@
                 15 Jahre Erfahrung, höchste Qualität und persönliche Beratung – verwandeln Sie Ihren Außenbereich in eine ganzjährige Wohlfühloase.
             </p>
             <div class="hero-buttons">
-                <a href="#kontakt" class="btn-primary">📞 Kostenlose Beratung</a>
+                <a href="anfrage.html" class="btn-primary">📞 Kostenlose Beratung</a>
                 <a href="#leistungen" class="btn-secondary">Unsere Leistungen</a>
             </div>
 
@@ -1123,8 +1123,9 @@
                 <h2>Lassen Sie uns sprechen</h2>
                 <p>Kostenlose Beratung für Ihr Projekt</p>
             </div>
-            
+
             <div class="contact-grid">
+                <!-- Left: contact info (unchanged) -->
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon">📍</div>
@@ -1133,7 +1134,6 @@
                             <p>Almastr. 52<br>45886 Gelsenkirchen</p>
                         </div>
                     </div>
-                    
                     <div class="contact-item">
                         <div class="contact-icon">📞</div>
                         <div class="contact-item-content">
@@ -1141,7 +1141,6 @@
                             <a href="tel:+491638641737">0163 8641737</a>
                         </div>
                     </div>
-                    
                     <div class="contact-item">
                         <div class="contact-icon">📧</div>
                         <div class="contact-item-content">
@@ -1149,7 +1148,6 @@
                             <a href="mailto:info@terra-z.de">info@terra-z.de</a>
                         </div>
                     </div>
-                    
                     <div class="contact-item">
                         <div class="contact-icon">⏰</div>
                         <div class="contact-item-content">
@@ -1158,31 +1156,29 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <label>Name *</label>
-                            <input type="text" required placeholder="Ihr Name">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label>E-Mail *</label>
-                            <input type="email" required placeholder="ihre@email.de">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label>Telefon</label>
-                            <input type="tel" placeholder="Ihre Telefonnummer">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label>Nachricht *</label>
-                            <textarea required placeholder="Beschreiben Sie Ihr Projekt..."></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">Anfrage senden</button>
-                    </form>
+
+                <!-- Right: CTA card pointing to anfrage.html -->
+                <div class="contact-form" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:1.75rem;padding:3rem 2.5rem;">
+                    <div style="font-size:3rem;line-height:1">📋</div>
+                    <div>
+                        <h3 style="font-size:1.6rem;margin-bottom:0.75rem">Ihr unverbindliches Angebot</h3>
+                        <p style="color:var(--text-secondary);line-height:1.7;max-width:360px;margin:0 auto">Füllen Sie unser detailliertes Anfrageformular aus – mit Produktauswahl, Maßangaben und Datei-Upload. Wir antworten innerhalb von 24 Stunden.</p>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:0.75rem;width:100%;max-width:320px">
+                        <a href="anfrage.html" class="submit-btn" style="text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;padding:1.1rem;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:white;border-radius:12px;font-weight:700;font-size:1rem;transition:all 0.3s ease;box-shadow:0 4px 20px rgba(255,107,53,0.3)">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            Jetzt Anfrage stellen
+                        </a>
+                        <a href="tel:+491638641737" style="text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;padding:1rem;background:transparent;color:var(--text-secondary);border:1px solid var(--border-medium);border-radius:12px;font-weight:500;font-size:0.95rem;transition:all 0.3s ease" onmouseover="this.style.borderColor='var(--primary)';this.style.color='var(--primary)'" onmouseout="this.style.borderColor='var(--border-medium)';this.style.color='var(--text-secondary)'">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.18 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
+                            0163 8641737 anrufen
+                        </a>
+                    </div>
+                    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center">
+                        <span style="font-size:0.78rem;color:var(--text-muted);display:flex;align-items:center;gap:5px"><span style="color:var(--accent)">✓</span> Kostenlos</span>
+                        <span style="font-size:0.78rem;color:var(--text-muted);display:flex;align-items:center;gap:5px"><span style="color:var(--accent)">✓</span> Unverbindlich</span>
+                        <span style="font-size:0.78rem;color:var(--text-muted);display:flex;align-items:center;gap:5px"><span style="color:var(--accent)">✓</span> Antwort in 24h</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1217,7 +1213,7 @@
             <div class="footer-section">
                 <h4>Kontakt</h4>
                 <a href="tel:+491638641737">📞 0163 8641737</a>
-                <a href="mailto:info@terra-z.de">📧 info@terra-z.de</a>
+                <a href="/cdn-cgi/l/email-protection#61080f070e2115041313004c1b4f0504">📧 <span class="__cf_email__" data-cfemail="abc2c5cdc4ebdfced9d9ca86d185cfce">[email&#160;protected]</span></a>
                 <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">Almastr. 52, 45886 Gelsenkirchen</p>
             </div>
         </div>
@@ -1227,7 +1223,7 @@
         </div>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // City Detection & Dynamic Content
         const cityMap = {
             'Gelsenkirchen': { name: 'Gelsenkirchen', region: 'im Zentrum des Ruhrgebiets' },
@@ -1412,15 +1408,4 @@ Gesendet von: www.terra-z.de
                       'Die Anfrage konnte leider nicht gesendet werden.\n\n' +
                       'Bitte kontaktieren Sie uns direkt:\n\n' +
                       '📞 Telefon: 0163 8641737\n' +
-                      '📧 E-Mail: info@terra-z.de\n\n' +
-                      'Wir helfen Ihnen gerne weiter!');
-            } finally {
-                // Reset button state
-                submitBtn.disabled = false;
-                submitBtn.textContent = originalText;
-                submitBtn.style.opacity = '1';
-            }
-        }); 
-    </script>
-</body>
-</html>
+                      '📧 E-
